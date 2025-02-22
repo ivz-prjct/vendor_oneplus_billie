@@ -95,7 +95,6 @@ android_app_import {
 	name: "com.oneplus.gpudrivers.kona.api30",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/com.oneplus.gpudrivers.kona.api30/com.oneplus.gpudrivers.kona.api30.apk",
-	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -107,7 +106,6 @@ android_app_import {
 	name: "com.qualcomm.qti.gpudrivers.lito.api30",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.lito.api30/com.qualcomm.qti.gpudrivers.lito.api30.apk",
-	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -323,18 +321,3 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
-
-install_symlink {
-	name: "libimscamera_jni_libimscamera_jni_symlink64",
-	system_ext_specific: true,
-	installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
-	symlink_target: "/system_ext/lib64/libimscamera_jni.so",
-}
-
-install_symlink {
-	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
-	system_ext_specific: true,
-	installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
-	symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
-}
-
